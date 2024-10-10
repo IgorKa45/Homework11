@@ -13,7 +13,7 @@ public class Main {
 
     }
 
-    //Тут проверяем операционную систему и год
+    //Тут проверяем операционную систему и год выпуска устройства
     public static void checkOSAndYear(byte clientOS, short clientDeviceYear) {
         if (clientDeviceYear >= 2015 && clientOS == 1) {
             System.out.println("Установите версию приложения для iOS по ссылке.");
