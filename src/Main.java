@@ -1,7 +1,7 @@
 public class Main {
     //Эта часть проверяет високосный ли год
     public static void checkYear(short year) {
-        if (year % 4 == 0 && year % 400 == 0 && year % 100 != 0 && year > 1584) {
+        if ((year % 4 == 0 && (year % 400 == 0 || year % 100 != 0)) && year > 1584) {
             System.out.println("Данный год является високосным.");
         } else if (year < 1584) {
             System.out.println("Этот год не может считаться високосным так как это понятие ввели в 1584 году.");
@@ -42,7 +42,7 @@ public static void checkDistance(byte deliveryDistance) {
 public static void main(String[] args) {
     System.out.println("Задание 1");
     //Исследуемый год
-    short year = 996;
+    short year = 1900;
     checkYear(year);
 
     System.out.println("Задание 2");
